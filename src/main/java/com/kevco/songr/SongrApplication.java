@@ -1,7 +1,11 @@
-package com.kevco.d.songr;
+package com.kevco.songr;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 @SpringBootApplication
 public class SongrApplication {
