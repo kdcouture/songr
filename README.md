@@ -9,7 +9,7 @@ This will delete and create a clean table each run unless the last line ending i
 
 
 - 1: Navigate to the root folder of the project.
-- 2: Run > java -jar build/libs/songr-0.0.1-SNAPSHOT.jar < in the command line.
+- 2: Run > gradle bootRun < in the command line.
 
 ---
 ## Routes
