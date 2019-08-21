@@ -4,7 +4,9 @@
 - NOTE! Users must set the application.properties values to your postgresql username. 
 spring.datasource.username=  
 spring.datasource.password=  
-These are located [here.](https://github.com/kdcouture/songr/blob/master/src/main/resources/application.properties)
+These are located [here.](https://github.com/kdcouture/songr/blob/master/src/main/resources/application.properties)  
+This will delete and create a clean table each run unless the last line ending in create is commented out.
+
 
 - 1: Navigate to the root folder of the project.
 - 2: Run > java -jar build/libs/songr-0.0.1-SNAPSHOT.jar < in the command line.
