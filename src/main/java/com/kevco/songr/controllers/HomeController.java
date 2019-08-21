@@ -1,4 +1,4 @@
-package com.kevco.songr;
+package com.kevco.songr.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

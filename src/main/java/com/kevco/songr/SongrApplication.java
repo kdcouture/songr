@@ -2,14 +2,11 @@ package com.kevco.songr;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
+@EnableJpaAuditing
 public class SongrApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(SongrApplication.class, args);
 	}

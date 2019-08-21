@@ -1,5 +1,6 @@
 package com.kevco.songr;
 
+import com.kevco.songr.controllers.HomeController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
