@@ -1,15 +1,17 @@
 package com.kevco.songr.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Album {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     long id;
+
+    @OneToMany (fetch = FetchType.EAGER, mappedBy = "album")
+    List<Song> songs;
+
     String title;
     String artist;
     int songCount;
@@ -29,6 +31,10 @@ public class Album {
         return artist;
     }
 
+    public long getId() {
+        return this.id;
+    }
+
     public String getTitle() {
         return title;
     }
@@ -45,5 +51,8 @@ public class Album {
         return this.imgURL;
     }
 
-
+    @Override
+    public String toString() {
+        return this.title;
+    }
 }
