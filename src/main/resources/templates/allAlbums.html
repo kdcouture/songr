@@ -12,7 +12,6 @@
     <form method="POST" action="/albums">
         Title:<input name="title" />
         Artist:<input name="artist" />
-        songCount:<input type="integer" name="songCount" />
         length:<input type="long" name="length" />
         imgURL:<input name="imgURL"/>
         <input type="submit" />
@@ -20,7 +19,9 @@
 </div>
 
 <div th:each="album : ${albums}" class="album">
-    <h3 th:id="${album.title}" th:text="${album.title}">Album Title</h3>
+    <h3>
+        <a th:href="@{/albums/{id}(id=${album.id})}"><span th:text="${album.title}"></span></a>
+    </h3>
     <p>
         Preformed by <span th:text="${album.artist}"></span>
     </p>
