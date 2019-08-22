@@ -15,8 +15,14 @@ NOTE: The database albums is required for this application to run correctly.
 ---
 ## Routes
 ---
+### /songs
+- This route will display all songs in th database and allow users to add new songs.
+---
 ### /albums
 - This route will display all albums in the database and also allow users to add an album into the database.
+---
+### /albums/{id}
+- This route will dispay only a single album's info and all songs associated with the album.
 ---
 ### /hello and /
 - This route acts as a welcome screen
